@@ -1,0 +1,47 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  
+}
+.Heading{
+  text-align: center;
+  margin: 50px;
+}
+.TaskItems{
+  border: 1px solid rgba(255, 255, 255, 0.533);
+  box-shadow: 1px 1px 5px 2px rgba(218, 215, 9, 0.718);
+  padding: 40px;
+  width: 800px;
+  height: 100%;
+  border-radius: 10px;
+  list-style-type: none;
+  font-size: 20px;
+}
+.TaskItems li{
+  box-shadow: 0.1px 0.1px 5px 0.2px white;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Deletebtn{
+  background-color: red;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 17px;
+  border-radius: 10px;
+
+}
