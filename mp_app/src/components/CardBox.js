@@ -1,12 +1,15 @@
 import { useState } from "react";
 
-const [show,setShow] =useState(true);
+
 
 export const CardBox = ({children,imp}) => {
+
+    const [show,setShow]=useState(true);
+
   return (
-    <div className={`box ${imp}`} >
+    <div  className={`box ${imp}`} >
         {children} 
-        <button>Hide</button>
+        <button onClick={()=>setShow(!(show))}>Hide</button>
     </div>
   )
 }
