@@ -1,5 +1,4 @@
 import logo from "../assets/tasks.png";
-import "./Header.css"
 
 
 export const Header = () => {
