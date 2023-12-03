@@ -85,3 +85,13 @@ nav{
 .warning{
   background-color: orange;
 }
+.Hidebtn{
+  background-color: blue;
+  padding: 8px 26px;
+  color: white;
+  border: 1px solid rgb(129, 129, 129);
+  border-radius: 10px;
+}
+.disnone{
+  display: none;
+}
