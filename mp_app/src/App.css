@@ -17,7 +17,6 @@ body{
   border-radius: 10px;
   list-style-type: none;
   font-size: 20px;
-  margin: auto;
 }
 .toggle{
   background-color: blue;
@@ -66,5 +65,23 @@ nav{
 .imglogo{
   height: 50px;
 }
-
-
+.content{
+  width: 60%;
+  margin: 0px auto;
+}
+.box{
+  text-align:center;
+  width:60%;
+  padding: 10px;
+  margin:20px auto 20px auto;
+  border-radius: 10px;
+}
+.success{
+  background-color: green;
+}
+.alert{
+  background-color: red;
+}
+.warning{
+  background-color: orange;
+}
