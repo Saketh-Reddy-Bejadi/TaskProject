@@ -1,6 +1,7 @@
-import { Children, useState } from "react";
+import {  useState } from "react";
 import { TaskCard } from "./TaskCard";
 import { CardBox } from "./CardBox";
+import styles from  "./TaskList.module.css"
 
 export const TaskList = () => {
 
@@ -19,7 +20,7 @@ export const TaskList = () => {
 
   return (
     <div className="content" >
-        <ul className={tasks.length!==0?'TaskItems':''}>
+        <ul className={tasks.length!==0?`TaskItems ${styles.TaskItems}`:''}>
             <input type='button' onClick={()=>setShow(!(show))} className={tasks.length!==0?'toggle':'disnone'} value={(show===true)?"Hide":"Show"} ></input>
             {show && tasks.map((task)=>(
             <TaskCard key={task.id+1} task={task} handleDelete={handleDelete}  />
