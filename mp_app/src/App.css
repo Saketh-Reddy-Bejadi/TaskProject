@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 .TaskItems{
   padding: 20px 20px;
   width: 800px;
@@ -16,14 +17,14 @@
   font-size: 20px;
   box-shadow: 1px 1px 10px  2px rgba(0, 0, 0, 0.267);
   margin-top: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.162);
+  border: 1px dashed rgba(0, 0, 0, 0.132);
 }
 
 
   
 .TaskItems li{
   margin: 20px auto;
-  padding: 15px;
+  padding:8px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -31,7 +32,7 @@
   border: 1px solid rgba(0, 0, 0, 0.211);
 }
 .Deletebtn{
-  background-color: red;
+  background-color: rgba(216, 2, 2, 0.736);
   border: none;
   padding: 8px 10px;
   color: white;
@@ -49,6 +50,7 @@ nav{
   display: flex;
   padding:20px 90px;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
 }
 .imglogo{
@@ -59,7 +61,7 @@ nav{
   margin: 0px auto;
 }
 .Hidebtn{
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.811);
   padding: 8px 26px;
   color: white;
   border: 1px solid rgb(129, 129, 129);
@@ -73,8 +75,19 @@ nav{
   font-weight:600;
 }
 .Footer{
-  margin:200px auto 20px auto;
+  position: absolute;
+  bottom: 10px;
+  left: 43%;
   text-align: center;
   width: fit-content;
 
+}
+.navSec1{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.home {
+  font-size: 18px;
+  font-weight: 590;
 }
