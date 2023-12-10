@@ -1,6 +1,7 @@
 import {  useState } from "react";
 import { TaskCard } from "./TaskCard";
 import "./TaskList.css"
+import { AddTask } from "./AddTask";
 
 export const TaskList = () => {
 
@@ -19,6 +20,7 @@ export const TaskList = () => {
 
   return (
     <div className="content" >
+        <AddTask/>
         <ul className={tasks.length!==0?`TaskItems`:''}>
             <div className={tasks.length!==0?'topSec':'disnone'} >
             <p>Task Items</p>
