@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const AddTask = () => {
+export const AddTask = ({tasks,setTasks}) => {
   const [taskValue,setTaskValue] =useState("");
   const [progress,setProgress]=useState(false);
 
@@ -9,18 +9,24 @@ export const AddTask = () => {
   }
 
   function handleReset() {
-    setTaskValue("")
-    setProgress(false)
+    setTaskValue("");
+    setProgress(false);
   }
   const handleSubmit=(event) =>{
     event.preventDefault();
     const task={
-      id:Math.floor(Math.random()*10000000),
+      id:Math.floor(Math.random()*100),
       name:taskValue,
       completed:Boolean(progress)
     }
-    console.log(task);
-    setTaskValue("")
+    if (task.name!=="") {
+      setTasks([...tasks,task]);
+    }
+    else{
+      alert("Task Name cannot be empty..!");
+    }
+    setTaskValue("");
+    setProgress("");
   }
 
   return (
@@ -33,9 +39,7 @@ export const AddTask = () => {
             </select>
             <button onClick={handleReset} id="Resetbtn" type="reset">Reset</button>
             <button type="submit" id="AddTaskbtn">Add Task</button>
-            
         </form>
-        <p>{taskValue}</p>
     </div>
   )
 }

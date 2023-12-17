@@ -6,9 +6,7 @@ import { AddTask } from "./AddTask";
 export const TaskList = () => {
 
     const [tasks,setTasks]=useState([
-        {id:5271,name:"Create a personal portfolio website",completed:true},
-        {id:3825,name:"Build a blogging platform",completed:false},
-        {id:6042,name:"Build or clone a E-Commerence Website",completed:false},
+        
       ])
     
     
@@ -20,7 +18,7 @@ export const TaskList = () => {
 
   return (
     <div className="content" >
-        <AddTask/>
+        <AddTask tasks={tasks} setTasks={setTasks}/>
         <ul className={tasks.length!==0?`TaskItems`:''}>
             <div className={tasks.length!==0?'topSec':'disnone'} >
             <p>Task Items</p>
