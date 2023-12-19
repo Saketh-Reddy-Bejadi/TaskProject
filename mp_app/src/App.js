@@ -10,7 +10,9 @@ export const App = () => {
   return (
     <div >
       <Header/>
-      <TaskList/>
+      <main>
+        <TaskList/>
+      </main>
       <Footer/>
     </div>
   )

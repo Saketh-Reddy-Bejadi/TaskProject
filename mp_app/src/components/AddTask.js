@@ -19,11 +19,11 @@ export const AddTask = ({tasks,setTasks}) => {
       name:taskValue,
       completed:Boolean(progress)
     }
-    if (task.name!=="") {
-      setTasks([...tasks,task]);
+    if (task.name=="") {
+      alert("Task Name cannot be empty..!");
     }
     else{
-      alert("Task Name cannot be empty..!");
+      setTasks([...tasks,task]);
     }
     setTaskValue("");
     setProgress("");
